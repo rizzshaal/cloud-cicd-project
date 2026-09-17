@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: CI/CD Pipeline
 
 on:
   push:
@@ -30,7 +30,6 @@ jobs:
       - name: Run tests
         run: python -m pytest
 
-    
       - name: Security scan
         uses: aquasecurity/trivy-action@master
         with:
