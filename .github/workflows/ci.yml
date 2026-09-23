@@ -11,12 +11,7 @@ on:
 permissions:
   id-token: write
   contents: read  
-      - name: Check GitHub OIDC
-        run: |
-          echo "Repository: ${{ github.repository }}"
-          echo "Branch: ${{ github.ref }}"
-          echo "Repository owner ID: ${{ github.repository_owner_id }}"
-          echo "Repository ID: ${{ github.event.repository.id }}"
+ 
 jobs:
   test:
     runs-on: ubuntu-latest
