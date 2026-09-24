@@ -14,7 +14,6 @@ spec:
     spec:
       containers:
         - name: cloud-cicd-app
-          image: cloud-cicd-app:latest
-          imagePullPolicy: Never
+          image: 122066462721.dkr.ecr.ap-south-1.amazonaws.com/cloud-cicd-app:latest
           ports:
             - containerPort: 5000
